@@ -9,7 +9,7 @@ meteoric:ionic
 meteoric:autoform-ionic
 meteoric:ionicons-sass
 meteoric:ionic-sass
-fourseven:scss@1.0.0
+fourseven:scss
 iron:router
 aldeed:autoform
 accounts-base
