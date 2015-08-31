@@ -1,5 +1,9 @@
 AppController = RouteController.extend({
-  layoutTemplate: 'appLayout'
+  layoutTemplate: 'appLayout',
+  onBeforeAction: function () {
+    // do some login checks or other custom logic
+    this.next();
+  }
 });
 
 MainController = AppController.extend({
@@ -13,3 +17,10 @@ MainController = AppController.extend({
   //   };
   // }
 });
+
+BusinesscreateController = AppController.extend({});
+CampaignscreateController = AppController.extend({});
+CampaignslistController = AppController.extend({});
+LoginController = AppController.extend({});
+ProfileController = AppController.extend({});
+

@@ -1,0 +1,65 @@
+<template name="businesscreate">
+  {{#contentFor "headerButtonLeft"}}
+      {{>ionNavBackButton path="main"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    
+
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Create a Business</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{getErrorServerMsg}}
+      <form id="registerForm">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Business Name</span>
+            <input name='businessName' type="text">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Business Address 1</span>
+            <input name='businessAddress1' type="text">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Business Address 2</span>
+            <input name='businessAddress2' type="text">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Business City</span>
+            <input name='businessCity' type="text">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Business State</span>
+            <input name='businessState' type="text">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Zipcode</span>
+            <input name='businessZip' type="text">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Business Country</span>
+            <input name='businessCountry' type="text">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Email</span>
+            <input name='email' type="email">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Password</span>
+            <input name='password' type="password">
+          </label>
+
+        </div>
+        <div class="padding">
+          <button class="button button-block button-balanced">Create Account</button>
+        </div>
+      </form>
+      
+    {{/ionContent}}
+  {{/ionView}}
+</template>

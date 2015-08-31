@@ -1,0 +1,57 @@
+<template name="campaignscreate">
+	{{#contentFor "headerButtonLeft"}}  
+    {{>ionNavBackButton path="businesscreate"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    
+
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Create a Campaign</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <form action="">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Campaign Name</span>
+            <input name="campaignName" type="text">
+          </label>
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Campaign Message</span>
+            <input name="campaignMessage" type="text">
+          </label>
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Coupon Image</span>
+            <input name="campaignImage" type="text">
+          </label>
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Coupons Offered in Campaign</span>
+            <input name="couponsOffered" type="text">
+          </label>
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Coupons Expires in Hrs</span>
+            <input name="couponsExpires" type="text">
+          </label>
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Campaign Target Distance in Miles</span>
+            <input name="campaignTarget" type="text">
+          </label>
+
+        </div>
+
+        <div class="padding">
+          <button class="button button-block button-balanced">Create Campaign</button>
+        </div>
+      </form>
+    {{/ionContent}}
+  {{/ionView}}
+</template>

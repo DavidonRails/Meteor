@@ -5,11 +5,16 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
 meteoric:ionic
 meteoric:autoform-ionic
 meteoric:ionicons-sass
 meteoric:ionic-sass
 fourseven:scss@1.0.0
 iron:router
+aldeed:autoform
+accounts-base
+accounts-password
+jakobloekke:rabbitmq
+materialize:materialize
+sacha:spin
+raix:handlebar-helpers
