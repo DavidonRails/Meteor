@@ -23,13 +23,25 @@
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">{{campaignName}}<i class="material-icons right">close</i></span> <br>
               {{#ionList}}
-
-                {{#ionItem iconLeft=true}}
-                  {{> ionIcon icon="ion-chatbox" class="positive"}}
+                  <a class="item item-icon-left item-icon-right" href="#">
+                    <i class="icon ion-chatbubble-working"></i>
                     {{campaignMessage}}
-                {{/ionItem}}
+                    <i class="icon ion-ios-telephone-outline"></i>
+                  </a>
+                  <a class="item item-icon-left item-icon-right" href="#">
+                    <i class="icon ion-ios-calendar"></i>
+                      Activated On
+                    <i class="icon ion-ios-telephone-outline"></i>
+                  </a>
+                  <a class="item item-icon-left item-icon-right" href="#">
+                    <i class="icon ion-home"></i>
+                      Valid At Store
+                    <i class="icon ion-ios-telephone-outline"></i>
+                  </a>
 
-                {{#ionItem iconLeft=true}}
+                
+
+                <!-- {{#ionItem iconLeft=true}}
                   {{> ionIcon icon="ios-checkmark" class="positive"}}
                     Activated On
                 {{/ionItem}}
@@ -37,7 +49,7 @@
                 {{#ionItem iconLeft=true}}
                   {{> ionIcon icon="ios-checkmark" class="positive"}}
                     Valid at Store
-                {{/ionItem}}
+                {{/ionItem}} -->
 
               {{/ionList}}
             </div>
