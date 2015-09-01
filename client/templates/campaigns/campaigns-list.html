@@ -18,15 +18,14 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">{{campaignName}}<i class="right material-icons" style="font-size: 35px;">expand_more</i></span>
-              <p><a href="#">This is a link</a></p>
+              <p style="font-size: 18px;"><i class="ion-ios-pricetags" style="font-size: 35px;"></i> {{coupounsOffered}}</p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">{{campaignName}}<i class="material-icons right">close</i></span> <br>
               {{#ionList}}
-                  <a class="item item-icon-left item-icon-right" href="#">
+                  <a class="item item-icon-left" style="white-space: inherit;" href="#">
                     <i class="icon ion-chatbubble-working"></i>
                     {{campaignMessage}}
-                    <i class="icon ion-ios-telephone-outline"></i>
                   </a>
                   <a class="item item-icon-left item-icon-right" href="#">
                     <i class="icon ion-ios-calendar"></i>
@@ -38,19 +37,6 @@
                       Valid At Store
                     <i class="icon ion-ios-telephone-outline"></i>
                   </a>
-
-                
-
-                <!-- {{#ionItem iconLeft=true}}
-                  {{> ionIcon icon="ios-checkmark" class="positive"}}
-                    Activated On
-                {{/ionItem}}
-
-                {{#ionItem iconLeft=true}}
-                  {{> ionIcon icon="ios-checkmark" class="positive"}}
-                    Valid at Store
-                {{/ionItem}} -->
-
               {{/ionList}}
             </div>
           </div>
