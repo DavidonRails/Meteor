@@ -91,14 +91,14 @@ Meteor.methods({
 		        vhost: '<vhost>'
 		    };
 
-		    RabbitMQ.createConnection(options);
+		    // RabbitMQ.createConnection(options);
 
-		    RabbitMQ.connection.on('ready', function () {
-		        RabbitMQ.connection.exchange('Project.E.ExchangeName', {type: 'topic'}, function (exchange) {
-		            RabbitMQ.exchanges.ExchangeName = exchange;
-		            RabbitMQ.emit('ExchangeName is ready');
-		        });
-		    });
+		    // RabbitMQ.connection.on('ready', function () {
+		    //     RabbitMQ.connection.exchange('Project.E.ExchangeName', {type: 'topic'}, function (exchange) {
+		    //         RabbitMQ.exchanges.ExchangeName = exchange;
+		    //         RabbitMQ.emit('ExchangeName is ready');
+		    //     });
+		    // });
 
 			return {
 			_id : _campaignId,
