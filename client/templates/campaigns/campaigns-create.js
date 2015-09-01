@@ -1,10 +1,9 @@
 Template.campaignscreate.events({
 	'submit form': function(e,tmpl){
 		e.preventDefault();
-		var currentUserId = Meteor.userId();
-
+		//var currentUserId = Meteor.userId();
 		var campaign = {
-			userid: currentUserId,
+			//userid: currentUserId,
 			businessProfileId:  Session.get('businessProfileId'),
 			businessLocationId: Session.get('businessLocationId'),
 			campaignName : $(e.target).find('[name=campaignName]').val(),

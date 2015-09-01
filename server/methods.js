@@ -82,7 +82,10 @@ Meteor.methods({
 	
 
 	campaignInsert: function(campaign){
-		var _campaignId = Campaigns.insert(campaign);
+		var currentUserId = Meteor.userId();
+		var campaignProfile = _.extend(campaign, { userid: currentUserId });
+
+		var _campaignId = Campaigns.insert(campaignProfile);
 		if (_campaignId !== null || _campaignId !== '' ){
 			   var options = {
 		        host: 'lsqwvdwj:XkCjN01BsPUYUMy10lU4oC_BbgytwnpL@owl.rmq.cloudamqp.com/lsqwvdwj',
