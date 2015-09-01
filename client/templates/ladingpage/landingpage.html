@@ -1,0 +1,38 @@
+<template name="landingpage">
+
+  {{#contentFor "headerButtonLeft"}}
+    
+
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    
+
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Main</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="padding">
+        {{#if currentUser }}
+          <h2 class="title">You ARE logged in as:</h2>
+          <h3>{{currentUser.emails.[0].address}}</h3>
+          <a href="{{pathFor 'campaignslist'}}" class="button icon-right ion-chevron-right button-stable">Campaigns List
+          </a>
+ 
+        {{else}}
+          <h2 class="title">You are NOT logged in</h2>
+          <a href="{{pathFor 'businesscreate'}}" class="button button-block button-stable">
+            Register
+          </a>        
+          <a href="{{pathFor 'login'}}" class="button button-block button-stable">
+            Login
+          </a>
+        {{/if}}
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
+</template>

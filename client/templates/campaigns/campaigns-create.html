@@ -28,8 +28,11 @@
 
           <label class="item item-input item-stacked-label">
             <span class="input-label">Coupon Image</span>
-            <input name="campaignCouponImage" type="text">
+
+            <input name="campaignCouponImage" type="hidden"><br>
+            {{> campaigneditimage}}         
           </label>
+
 
           <label class="item item-input item-stacked-label">
             <span class="input-label">Coupons Offered in Campaign</span>
@@ -54,4 +57,7 @@
       </form>
     {{/ionContent}}
   {{/ionView}}
+</template>
+<template name="campaigneditimage">
+      <a class="btn-floating btn-small waves-effect waves-light" style="background-color:#8dc63f"><i class="material-icons">add</i></a>
 </template>

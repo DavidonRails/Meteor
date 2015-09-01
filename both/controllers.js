@@ -6,7 +6,7 @@ AppController = RouteController.extend({
   }
 });
 
-MainController = AppController.extend({
+LandingpageController = AppController.extend({
   // EXAMPLE:
   // waitOn: function () {
   //   return Meteor.subscribe('products');
