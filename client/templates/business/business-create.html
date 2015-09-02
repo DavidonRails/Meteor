@@ -14,7 +14,9 @@
 
   {{#ionView}}
     {{#ionContent}}
-      {{getErrorServerMsg}}
+      {{#if getErrorServerMsg }}
+          <p class="red-text text-darken-4 padding center-align">{{getErrorServerMsg}}</p>
+      {{/if}}
       <form id="registerForm">
         <div class="list">
           <label class="item item-input item-stacked-label">
@@ -63,3 +65,51 @@
     {{/ionContent}}
   {{/ionView}}
 </template>
+
+<!-- <template name="businesscreate">
+  {{#contentFor "headerButtonLeft"}}
+      {{>ionNavBackButton path="landingpage"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    
+
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Create a Business</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+
+       {{#autoForm collection="BusinessProfiles" id="registerForm" type="insert"}}
+         <div class="list">
+          {{> afQuickField name='businessName'}}
+          {{> afQuickField name='businessAddress1'}}
+          {{> afQuickField name='businessAddress2'}}
+          {{> afQuickField name='businessCity'}}
+          {{> afQuickField name='businessState'}}
+          {{> afQuickField name='businessZip'}}
+          {{> afQuickField name='businessCountry'}}
+          {{> afQuickField name='email'}}
+          {{#if getErrorServerMsg }}
+              <p class="assertive padding">{{getErrorServerMsg}}</p>
+          {{/if}}
+
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Password</span>
+            <input name='password' type="password">
+          </label>
+         </div>
+
+         <div class="padding">
+            <button type="submit" class="button button-block button-balanced">Create Account</button>
+         </div>
+          
+        {{/autoForm}}
+      
+    {{/ionContent}}
+  {{/ionView}}
+</template> -->
+

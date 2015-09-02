@@ -1,5 +1,5 @@
 <template name="campaignscreate">
-	{{#contentFor "headerButtonLeft"}}  
+  {{#contentFor "headerButtonLeft"}}  
     {{>ionNavBackButton path="businesscreate"}}
   {{/contentFor}}
 
@@ -61,3 +61,41 @@
 <template name="campaigneditimage">
       <a class="btn-floating btn-small waves-effect waves-light" style="background-color:#8dc63f"><i class="material-icons">add</i></a>
 </template>
+
+<!-- <template name="campaignscreate">
+  {{#contentFor "headerButtonLeft"}}  
+    {{>ionNavBackButton path="businesscreate"}}
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    
+
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Create a Campaign</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#autoForm collection="Campaigns" id="createCampaign" type="insert" doc=this}}
+        <div class="list">
+          {{> afQuickField name='campaignName'}}
+          {{> afQuickField name='campaignMessage'}}
+          {{> afQuickField name='campaignCouponImage'}}
+          {{> afQuickField name='coupounsOffered'}}
+          {{> afQuickField name='coupounsExpires'}}
+          {{> afQuickField name='campaignTarget'}}
+        </div>
+
+        <div class="padding">
+          <button type="submit" class="button button-block button-balanced">
+            Create Campaign
+          </button>
+        </div>      
+          
+      {{/autoForm}}
+    {{/ionContent}}
+  {{/ionView}}
+</template> -->
+

@@ -17,3 +17,5 @@ accounts-password
 sacha:spin
 raix:handlebar-helpers
 materialize:materialize
+aldeed:collection2
+aldeed:simple-schema

@@ -14,6 +14,9 @@
 
   {{#ionView}}
     {{#ionContent}}
+      {{#if loginError}}
+        <p class="padding center-align">{{loginError}}</p>
+      {{/if}}
       <form action="">
         <div class="list">
           <label class="item item-input item-stacked-label">

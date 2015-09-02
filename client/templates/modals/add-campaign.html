@@ -15,13 +15,12 @@
 	        <div class="list">
 	        	<label class="item item-input item-stacked-label" style="padding-right:16px!important;">
 	        		Location Select
-	        		<select class="browser-default">
+	        		<select class="browser-default" name="locationSelect">
 				      <option value="" disabled selected>Choose a Location</option>
-					    {{#each createdlocations}}
-					      <option value="{{businessLocation}}">test</option>
+					  <option value="{{businessLocation}}">test</option>
 					      <!-- <option value="2">Option 2</option>
 					      <option value="3">Option 3</option> -->
-					    {{/each}}
+					    
 				    </select>
 	        	</label>
 			    
@@ -35,12 +34,12 @@
 	            <input name="campaignMessage" type="text">
 	          </label>
 
-	          <label class="item item-input item-stacked-label">
+	          <!-- <label class="item item-input item-stacked-label">
 	            <span class="input-label">Coupon Image</span>
 
 	            <input name="campaignCouponImage" type="hidden"><br>
 	            {{> campaigneditimage}}         
-	          </label>
+	          </label> -->
 
 
 	          <label class="item item-input item-stacked-label">
