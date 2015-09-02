@@ -3,3 +3,15 @@
     background-color: transparent;
     box-shadow: none;
 }
+
+nav .brand-logo {
+    top: 13px;
+}
+
+.month {
+	font-family: 'FuturaStd-Light';
+}
+
+.day {
+	font-family: 'FuturaStd-ExtraBold';
+}

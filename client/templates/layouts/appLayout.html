@@ -1,7 +1,12 @@
 <template name="appLayout">
 
   {{#ionBody}}
-    {{> ionNavBar}}
+
+    <nav>
+      <div class="nav-wrapper">
+         {{> ionNavBar}}
+      </div>
+    </nav> 
 
     {{#ionNavView}}
       {{#if Template.subscriptionsReady}}      
