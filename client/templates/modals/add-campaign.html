@@ -1,4 +1,40 @@
 <template name="addcampaign">
+	{{#ionModal customTemplate=true}}
+		<div class="bar bar-header bar-stable">
+		    {{#if isAndroid}}
+
+		      <button data-dismiss="modal" class="button button-icon waves-effect waves-green" style="right:8px;"><i class="icon ion-android-arrow-back"></i></button>
+		    {{else}}
+		        <button data-dismiss="modal" class="button button-icon waves-effect waves-green" style="right:8px;"><i class="icon ion-ios-arrow-back"></i> Back</button>
+		    {{/if}}
+		    <h2 class="title text-uppercase">Start Another Campaign</h2>
+		</div>
+		{{#ionView}}
+	    	{{#ionContent}}
+				<form action="">
+			        <div class="list">
+			        	<label class="item item-input item-stacked-label" style="padding-right:16px!important;">
+			        		Location Select
+			        		<select class="browser-default" name="locationSelect">
+						      <option value="" disabled selected>
+						      	Choose a Location
+						      </option>
+							  {{options}}
+							  <option value="2">Option 2</option>
+							  <option value="3">Option 3</option>
+							    
+						    </select>
+			        	</label>
+			        </div>
+			    </form>
+
+	    	{{/ionContent}}
+	    {{/ionView}}
+
+	{{/ionModal}}
+</template>
+
+<!-- <template name="addcampaign">
 {{#ionModal customTemplate=true}}
 	<div class="bar bar-header bar-stable">
 	    {{#if isAndroid}}
@@ -17,9 +53,9 @@
 	        		Location Select
 	        		<select class="browser-default" name="locationSelect">
 				      <option value="" disabled selected>Choose a Location</option>
-					  <option value="{{businessLocation}}">test</option>
-					      <!-- <option value="2">Option 2</option>
-					      <option value="3">Option 3</option> -->
+					  <option value="1">Option 1</option>
+					  <option value="2">Option 2</option>
+					  <option value="3">Option 3</option>
 					    
 				    </select>
 	        	</label>
@@ -32,7 +68,7 @@
 	          <label class="item item-input item-stacked-label">
 	            <span class="input-label">Campaign Message</span>
 	            <input name="campaignMessage" type="text">
-	          </label>
+	          </label> -->
 
 	          <!-- <label class="item item-input item-stacked-label">
 	            <span class="input-label">Coupon Image</span>
@@ -42,7 +78,7 @@
 	          </label> -->
 
 
-	          <label class="item item-input item-stacked-label">
+<!-- 	          <label class="item item-input item-stacked-label">
 	            <span class="input-label">Coupons Offered in Campaign</span>
 	            <input name="coupounsOffered" type="text">
 	          </label>
@@ -66,4 +102,4 @@
 	    {{/ionContent}}
 	  {{/ionView}}
 {{/ionModal}}
-</template>
+</template> -->

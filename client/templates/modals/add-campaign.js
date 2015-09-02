@@ -1,13 +1,8 @@
 Template.addcampaign.helpers({
-	'createdlocations' : function(){
-		return BusinessLocations.find();
+	'options' : function(){
+		return BusinessLocations.find({}).map(function(rec) { 
+              return { label: rec.businessLocation, value: rec.businessProfileId }; 
+            });
 	}
 });
 
-// Template.addcampaign.helpers({
-// 	'createdlocations' : function(){
-// 		return Businesslocations.find().map(function(rec) { 
-//               return { label: rec.name, value: rec. }; 
-//             });
-// 	}
-// });
