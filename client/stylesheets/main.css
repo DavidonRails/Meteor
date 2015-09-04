@@ -1,7 +1,15 @@
+.futura-extra-bold {
+	font-family: 'FuturaStd-ExtraBold';
+}
+
 .item-input {
     display: block;
     background-color: transparent;
     box-shadow: none;
+}
+
+nav {
+    background-color: #8dc63f;
 }
 
 nav .brand-logo {
@@ -14,4 +22,20 @@ nav .brand-logo {
 
 .day {
 	font-family: 'FuturaStd-ExtraBold';
+}
+
+.dabcolor {
+	background-color: #8dc63f;
+}
+
+.button.button-stable.active, .button.button-stable.activated {
+    border-color: #75A533;
+    background-color: #75A533;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button.active, .button.activated {
+    border-color: #75A533;
+    background-color:#75A533;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
 }

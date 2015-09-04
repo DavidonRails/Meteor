@@ -8,12 +8,8 @@
       </div>
     </nav> 
 
-    {{#ionNavView}}
-      {{#if Template.subscriptionsReady}}      
+    {{#ionNavView}}     
         {{> yield }}
-      {{else}}
-        <div class="loading">{{>spinner}}</div>
-      {{/if}}
     {{/ionNavView}}
     
   {{/ionBody}}

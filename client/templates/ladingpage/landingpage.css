@@ -1,0 +1,8 @@
+.slick-slider {
+	height: 300px;
+}
+
+.slideshow-item {
+	position: relative;
+	top: 100px;
+}

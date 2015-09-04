@@ -27,11 +27,41 @@
           </a>
  
         {{else}}
-          <h2 class="title">You are NOT logged in</h2>
-          <a href="{{pathFor 'businesscreate'}}" class="button button-block button-stable">
-            Register
-          </a>        
-          <a href="{{pathFor 'login'}}" class="button button-block button-stable">
+          {{#ionSlideBox}}
+            {{#ionSlide class="light-bg"}}
+              <div class="slideshow-item">
+                <img class="responsive-img" src="images/dable-icon.png" alt="" width="49" style="margin:0 auto;">
+                <br>
+                <p class="flow-text center-align">
+                  location based services used to directly target your surrounding audience
+                </p>
+              </div>
+            {{/ionSlide}}
+            {{#ionSlide class="light-bg"}}
+              <div class="slideshow-item">
+                <img class="responsive-img" src="images/timer.png" alt="" width="49" style="margin:0 auto;">
+                <br>
+                <p class="flow-text center-align">
+                  strategic time sensitive deals based on your potential consumer reach
+                </p>
+              </div>
+            {{/ionSlide}}
+            {{#ionSlide class="light-bg"}}
+              <div class="slideshow-item">
+                <br>
+                <p class="flow-text center-align">
+                  increase & build a loyal consumer base to promote special offers
+                </p>
+              </div>
+            {{/ionSlide}}
+          {{/ionSlideBox}}
+
+          <!-- <h2 class="title center-align">You are NOT logged in</h2> -->
+          <a href="{{pathFor 'businesscreate'}}" class="futura-extra-bold button button-block button-stable">
+            Register Now!
+          </a> 
+          <p class="center-align">OR</p>       
+          <a href="{{pathFor 'login'}}" class="futura-extra-bold button button-block button-stable">
             Login
           </a>
         {{/if}}

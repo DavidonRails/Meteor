@@ -19,7 +19,7 @@
   'loginError': function(){
     return Session.get('loginError');
   }
- })
+});
 
 Template.logout.events({
 	'click .logout': function(e,t){
@@ -27,4 +27,4 @@ Template.logout.events({
 		Meteor.logout();
 		Router.go('/');
 	}
-})
+});
