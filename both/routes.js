@@ -6,6 +6,10 @@ Router.route('/business-create', {
   name: 'businesscreate'
 });
 
+Router.route('/camera-feature', {
+  name: 'camerafeature'
+});
+
 Router.route('/campaigns-create', {
   name: 'campaignscreate'
 });

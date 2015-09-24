@@ -1,0 +1,22 @@
+
+<template name="camerafeature">
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Barcode Scanner</h1>
+  {{/contentFor}}
+  {{#ionView}}
+    {{#ionContent}}
+
+      {{> sAlert}}
+
+      <div class="padding">
+        <div class="list barcode_content">
+           Please scan campaigns barcode...
+        </div>
+
+        <button class="button button-block button-balanced futura-extra-bold scan_code_buttton" style="background-color: #8dc63f;">Scan Now!</button>
+      </div>
+    {{/ionContent}}
+  {{/ionView}}
+  {{> tabs}}
+</template>
+

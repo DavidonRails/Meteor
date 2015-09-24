@@ -4,6 +4,7 @@ Template.ionTabs.events({
 	},
     
     'click': function (event, template) {
+    	
 	    if (template.data.path) {
 	      Session.set('ionTab.current', template.data.path);
 	    }

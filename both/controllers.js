@@ -23,4 +23,5 @@ CampaignscreateController = AppController.extend({});
 CampaignslistController = AppController.extend({});
 LoginController = AppController.extend({});
 ProfileController = AppController.extend({});
+CamerafeatureController = AppController.extend({});
 

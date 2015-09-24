@@ -1,4 +1,4 @@
- Template.login.events({
+Template.login.events({
   'submit form': function(event, template){
     event.preventDefault();
     var emailVar = template.find('#login-email').value;
@@ -15,7 +15,7 @@
   }
  }); // end login event
 
- Template.login.helpers({
+Template.login.helpers({
   'loginError': function(){
     return Session.get('loginError');
   }
