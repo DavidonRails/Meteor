@@ -1,0 +1,30 @@
+
+Please run follow commands to install cordova plugins on your project directory
+
+1)
+meteor add cordova:com.phonegap.plugins.barcodescanner@2.0.1
+
+2)
+meteor add cordova:org.apache.cordova.camera@0.3.1
+
+3)
+meteor add cordova:org.apache.cordova.dialogs@0.2.10
+
+4)
+meteor add mdg:camera
+
+5)
+meteor add msg:geolocation
+
+6)
+meteor add mdg:reload-on-resume
+
+7)
+meteor add cfs:standard-packages
+
+8)
+meteor add cfs:filesystem
+
+9)
+meteor add cfs:ejson-file
+

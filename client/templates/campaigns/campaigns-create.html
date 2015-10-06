@@ -58,8 +58,16 @@
     {{/ionContent}}
   {{/ionView}}
 </template>
-<template name="campaigneditimage">
-      <a class="btn-floating btn-small waves-effect waves-light" style="background-color:#8dc63f"><i class="material-icons">add</i></a>
+
+<template name="campaigneditimage" style="float:right;">
+      
+      <a class="btn-floating btn-small waves-effect waves-light" style="background-color:#8dc63f">
+        <i class="ion-camera campaign_camera_button"></i>
+      </a>
+      
+      <br />
+
+      <img id ="uploading_image" class="uploading_image" src="{{campaign_photo uploading='/images/uploading.gif' storing='/images/storing.gif'}}" style="display:{{campaign_photo_visible}};" />
 </template>
 
 <!-- <template name="campaignscreate">

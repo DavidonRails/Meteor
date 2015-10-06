@@ -47,7 +47,7 @@ Template.camerafeature.events({
               //     warning: '/beep-warning.mp3'
               // }
           });
-
+          
           /*
           navigator.notification.vibrate(1000);
 

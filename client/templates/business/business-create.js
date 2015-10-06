@@ -1,5 +1,7 @@
 Template.businesscreate.events({
 	'submit form' : function(e) {
+		Router.go('campaignscreate');
+		/*
 		e.preventDefault();
 		var password = $(e.target).find('[name=password]').val();
 		var businessprofile = {
@@ -38,5 +40,6 @@ Template.businesscreate.events({
 			
 		    }
 		});
+		*/
 	}
 });

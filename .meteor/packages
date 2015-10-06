@@ -20,3 +20,8 @@ materialize:materialize
 aldeed:collection2
 aldeed:simple-schema
 juliancwirko:s-alert-flip
+mdg:camera
+mdg:geolocation
+cfs:standard-packages
+cfs:filesystem
+cfs:ejson-file

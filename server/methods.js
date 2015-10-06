@@ -115,3 +115,29 @@ Meteor.methods({
 		}
 	}
 });
+
+
+Meteor.startup(function() {
+  //ImageUploads.remove({});
+  console.log("Images Uploads:", uploadImageCollection.find().count());
+
+  uploadImageCollection.on('removed', function (fileObj) {
+    console.log("Removed " + fileObj._id + " from Images collection.");
+  });
+});
+
+Meteor.methods({
+  testUrlInsert: function() {
+    return uploadImageCollection.insert("http://cdn.morguefile.com/imageData/public/files/b/bboomerindenial/preview/fldr_2009_04_01/file3301238617907.jpg");
+  },
+  testFileInsert: function () {
+    return uploadImageCollection.insert("/Users/Eric/Downloads/testfile.jpg");
+  },
+  rotate: function() {
+    uploadImageCollection.find().forEach(function (fileObj) {
+      var readStream = fileObj.createReadStream('images');
+      var writeStream = fileObj.createWriteStream('images');
+      gm(readStream).swirl(180).stream().pipe(writeStream);
+    });
+  }
+});
